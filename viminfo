@@ -20,12 +20,22 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1604849158,,"wq"
 :q
-|2,0,1604838648,,"q"
-:w
-|2,0,1604838644,,"w"
+|2,0,1604849099,,"q"
+:q!
+|2,0,1604848567,,"q!"
 :noh
-|2,0,1604838554,,"noh"
+|2,0,1604848003,,"noh"
+:!ls
+|2,0,1604847832,,"!ls"
+:w
+|2,0,1604847623,,"w"
+:s
+|2,0,1604847545,,"s"
+:qw
+|2,0,1604840672,,"qw"
 :/set vimi
 |2,0,1604838218,,"/set vimi"
 :h viminfo
@@ -38,20 +48,12 @@ $
 |2,0,1604837506,,"h VIMINIT"
 :help inoremap
 |2,0,1604790991,,"help inoremap"
-:wq
-|2,0,1604790504,,"wq"
-:qw
-|2,0,1604789541,,"qw"
 :help hidden
 |2,0,1604788467,,"help hidden"
-:q!
-|2,0,1604787135,,"q!"
 :e ~/.vimrc
 |2,0,1604759530,,"e ~/.vimrc"
 :!vim ~/.vimrc
 |2,0,1604759436,,"!vim ~/.vimrc"
-:!ls
-|2,0,1604759419,,"!ls"
 :vim ~/.vimrc
 |2,0,1604759407,,"vim ~/.vimrc"
 :edit ~/.vimrc
@@ -178,288 +180,417 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	dddf
-|3,0,0,1,1,0,1604837293,"dddf"
+"0	CHAR	0
+	~/.vim
+|3,0,0,0,1,0,1604848028,"~/.vim"
 ""1	LINE	0
-	:w
-|3,1,1,1,1,0,1604838611,":w"
+	colorscheme evening
+|3,1,1,1,1,0,1604849154,"colorscheme evening"
 "2	LINE	0
-	dd
-|3,0,2,1,1,0,1604838610,"dd"
+	colorscheme blue
+|3,0,2,1,1,0,1604849129,"colorscheme blue"
 "3	LINE	0
+	    autocmd FileType c source /path-for-C-settings/w-settings.vim
 	
-|3,0,3,1,1,0,1604838431,""
+|3,0,3,1,2,0,1604843599,"    autocmd FileType c source /path-for-C-settings/w-settings.vim",""
 "4	LINE	0
-	
-|3,0,4,1,1,0,1604838415,""
+	jdd
+|3,0,4,1,1,0,1604843502,"jdd"
 "5	LINE	0
-	dddf
-|3,0,5,1,1,0,1604791140,"dddf"
+	:w
+|3,0,5,1,1,0,1604838611,":w"
 "6	LINE	0
-	inoremap <CAPS>  <ESC>:echoe "Use j"<CR>
-|3,0,6,1,1,0,1604790930,"inoremap <CAPS>  <ESC>:echoe \"Use j\"<CR>"
+	dd
+|3,0,6,1,1,0,1604838610,"dd"
 "7	LINE	0
-	" Try to prevent bad habits like using the arrow keys for movement. This is
-	" not the only possible bad habit. For example, holding down the h/j/k/l keys
-	" for movement, rather than using more efficient movement commands, is also a
-	" bad habit. The former is enforceable through a .vimrc, while we don't know
-	" how to prevent the latter.
-|3,0,7,1,5,0,1604790214,"\" Try to prevent bad habits like using the arrow keys for movement. This is","\" not the only possible bad habit. For example, holding down the h/j/k/l keys","\" for movement, rather than using more efficient movement commands, is also a","\" bad habit. The former is enforceable through a .vimrc, while we don't know","\" how to prevent the latter."
-"8	LINE	0
-	" This setting makes search case-insensitive when all characters in the string
-	" being searched are lowercase. However, the search becomes case-sensitive if
-	" it contains any capital letters. This makes searching more convenient.
-|3,0,8,1,3,0,1604789282,"\" This setting makes search case-insensitive when all characters in the string","\" being searched are lowercase. However, the search becomes case-sensitive if","\" it contains any capital letters. This makes searching more convenient."
-"9	LINE	0
 	
-|3,0,9,1,1,0,1604789225,""
+|3,0,7,1,1,0,1604838431,""
+"8	LINE	0
+	
+|3,0,8,1,1,0,1604838415,""
+"9	LINE	0
+	dddf
+|3,0,9,1,1,0,1604791140,"dddf"
 "-	CHAR	0
-	j
-|3,0,36,0,1,0,1604838585,"j"
+	blub
+|3,0,36,0,1,0,1604849042,"blub"
 
 # File marks:
-'0  65  13  ~/.vim/vimrc
-|4,48,65,13,1604838648,"~/.vim/vimrc"
-'1  59  39  ~/.vimrc
-|4,49,59,39,1604837577,"~/.vimrc"
-'2  578  5  ~/.viminfo
-|4,50,578,5,1604837236,"~/.viminfo"
-'3  435  31  ~/.viminfo
-|4,51,435,31,1604836851,"~/.viminfo"
-'4  435  31  ~/.viminfo
-|4,52,435,31,1604836851,"~/.viminfo"
-'5  59  21  ~/.vimrc
-|4,53,59,21,1604795426,"~/.vimrc"
-'6  817  9  /tmp/tutorb6585g
-|4,54,817,9,1604793094,"/tmp/tutorb6585g"
-'7  64  0  ~/.vimrc
-|4,55,64,0,1604791075,"~/.vimrc"
-'8  64  0  ~/.vimrc
-|4,56,64,0,1604791075,"~/.vimrc"
-'9  64  0  ~/.vimrc
-|4,57,64,0,1604791075,"~/.vimrc"
+'0  1  0  ~/.vim/LangSpecifications/python-settings.vim
+|4,48,1,0,1604849158,"~/.vim/LangSpecifications/python-settings.vim"
+'1  1  0  ~/.vim/LangSpecifications/java-settings.vim
+|4,49,1,0,1604849148,"~/.vim/LangSpecifications/java-settings.vim"
+'2  1  0  ~/.vim/LangSpecifications/tt.py
+|4,50,1,0,1604849099,"~/.vim/LangSpecifications/tt.py"
+'3  2  18  ~/.vim/LangSpecifications/python-settings.vim
+|4,51,2,18,1604849055,"~/.vim/LangSpecifications/python-settings.vim"
+'4  2  18  ~/.vim/LangSpecifications/python-settings.vim
+|4,52,2,18,1604849055,"~/.vim/LangSpecifications/python-settings.vim"
+'5  1  0  ~/.vim/LangSpecifications/rr.py
+|4,53,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+'6  1  0  ~/.vim/LangSpecifications/tt.java
+|4,54,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+'7  1  0  ~/.vim/LangSpecifications/rr.py
+|4,55,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+'8  1  0  ~/.vim/LangSpecifications/tt.java
+|4,56,1,0,1604848779,"~/.vim/LangSpecifications/tt.java"
+'9  1  0  ~/.vim/LangSpecifications/rr.py
+|4,57,1,0,1604848723,"~/.vim/LangSpecifications/rr.py"
 
 # Jumplist (newest first):
--'  65  13  ~/.vim/vimrc
-|4,39,65,13,1604838648,"~/.vim/vimrc"
--'  54  0  ~/.vim/vimrc
-|4,39,54,0,1604838338,"~/.vim/vimrc"
--'  44  69  ~/.vim/vimrc
-|4,39,44,69,1604838331,"~/.vim/vimrc"
--'  27  0  ~/.vim/vimrc
-|4,39,27,0,1604838021,"~/.vim/vimrc"
--'  51  0  ~/.vim/vimrc
-|4,39,51,0,1604838020,"~/.vim/vimrc"
--'  38  0  ~/.vim/vimrc
-|4,39,38,0,1604837812,"~/.vim/vimrc"
--'  46  0  ~/.vim/vimrc
-|4,39,46,0,1604837771,"~/.vim/vimrc"
--'  33  0  ~/.vim/vimrc
-|4,39,33,0,1604837768,"~/.vim/vimrc"
--'  39  11  ~/.vim/vimrc
-|4,39,39,11,1604837747,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1604837643,"~/.vim/vimrc"
--'  59  39  ~/.vimrc
-|4,39,59,39,1604837577,"~/.vimrc"
--'  59  39  ~/.vimrc
-|4,39,59,39,1604837577,"~/.vimrc"
--'  1  1  ~/.vimrc
-|4,39,1,1,1604837306,"~/.vimrc"
--'  1  1  ~/.vimrc
-|4,39,1,1,1604837306,"~/.vimrc"
--'  1  0  ~/.vim
-|4,39,1,0,1604837293,"~/.vim"
--'  1  0  ~/.vim
-|4,39,1,0,1604837293,"~/.vim"
--'  1  0  ~/.vim
-|4,39,1,0,1604837293,"~/.vim"
--'  1  0  ~/.vim
-|4,39,1,0,1604837293,"~/.vim"
--'  578  5  ~/.viminfo
-|4,39,578,5,1604837236,"~/.viminfo"
--'  578  5  ~/.viminfo
-|4,39,578,5,1604837236,"~/.viminfo"
--'  578  5  ~/.viminfo
-|4,39,578,5,1604837236,"~/.viminfo"
--'  578  5  ~/.viminfo
-|4,39,578,5,1604837236,"~/.viminfo"
--'  578  5  ~/.viminfo
-|4,39,578,5,1604837236,"~/.viminfo"
--'  578  5  ~/.viminfo
-|4,39,578,5,1604837236,"~/.viminfo"
--'  578  5  ~/.viminfo
-|4,39,578,5,1604837236,"~/.viminfo"
--'  578  5  ~/.viminfo
-|4,39,578,5,1604837236,"~/.viminfo"
--'  435  31  ~/.viminfo
-|4,39,435,31,1604837225,"~/.viminfo"
--'  435  31  ~/.viminfo
-|4,39,435,31,1604837225,"~/.viminfo"
--'  435  31  ~/.viminfo
-|4,39,435,31,1604837225,"~/.viminfo"
--'  435  31  ~/.viminfo
-|4,39,435,31,1604837225,"~/.viminfo"
--'  435  31  ~/.viminfo
-|4,39,435,31,1604837225,"~/.viminfo"
--'  435  31  ~/.viminfo
-|4,39,435,31,1604837225,"~/.viminfo"
--'  435  31  ~/.viminfo
-|4,39,435,31,1604837225,"~/.viminfo"
--'  435  31  ~/.viminfo
-|4,39,435,31,1604837225,"~/.viminfo"
--'  435  31  ~/.viminfo
-|4,39,435,31,1604836851,"~/.viminfo"
--'  435  31  ~/.viminfo
-|4,39,435,31,1604836851,"~/.viminfo"
--'  435  31  ~/.viminfo
-|4,39,435,31,1604836851,"~/.viminfo"
--'  435  31  ~/.viminfo
-|4,39,435,31,1604836851,"~/.viminfo"
--'  435  31  ~/.viminfo
-|4,39,435,31,1604836851,"~/.viminfo"
--'  435  31  ~/.viminfo
-|4,39,435,31,1604836851,"~/.viminfo"
--'  435  31  ~/.viminfo
-|4,39,435,31,1604836851,"~/.viminfo"
--'  435  31  ~/.viminfo
-|4,39,435,31,1604836851,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1604836809,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1604836809,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1604836809,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1604836809,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1604836809,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1604836809,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1604836809,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1604836809,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1604836809,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1604836809,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1604836809,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1604836809,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1604836809,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1604836809,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1604836809,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1604836809,"~/.viminfo"
--'  59  21  ~/.vimrc
-|4,39,59,21,1604795426,"~/.vimrc"
--'  59  21  ~/.vimrc
-|4,39,59,21,1604795426,"~/.vimrc"
--'  59  21  ~/.vimrc
-|4,39,59,21,1604795426,"~/.vimrc"
--'  59  21  ~/.vimrc
-|4,39,59,21,1604795426,"~/.vimrc"
--'  59  21  ~/.vimrc
-|4,39,59,21,1604795426,"~/.vimrc"
--'  59  21  ~/.vimrc
-|4,39,59,21,1604795426,"~/.vimrc"
--'  59  21  ~/.vimrc
-|4,39,59,21,1604795426,"~/.vimrc"
--'  59  21  ~/.vimrc
-|4,39,59,21,1604795426,"~/.vimrc"
--'  59  21  ~/.vimrc
-|4,39,59,21,1604795426,"~/.vimrc"
--'  59  21  ~/.vimrc
-|4,39,59,21,1604795426,"~/.vimrc"
--'  59  21  ~/.vimrc
-|4,39,59,21,1604795426,"~/.vimrc"
--'  59  21  ~/.vimrc
-|4,39,59,21,1604795426,"~/.vimrc"
--'  59  21  ~/.vimrc
-|4,39,59,21,1604795426,"~/.vimrc"
--'  59  21  ~/.vimrc
-|4,39,59,21,1604795426,"~/.vimrc"
--'  59  21  ~/.vimrc
-|4,39,59,21,1604795426,"~/.vimrc"
--'  59  21  ~/.vimrc
-|4,39,59,21,1604795426,"~/.vimrc"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
--'  817  9  /tmp/tutorb6585g
-|4,39,817,9,1604793094,"/tmp/tutorb6585g"
+-'  1  0  ~/.vim/LangSpecifications/python-settings.vim
+|4,39,1,0,1604849158,"~/.vim/LangSpecifications/python-settings.vim"
+-'  1  0  ~/.vim/LangSpecifications/java-settings.vim
+|4,39,1,0,1604849148,"~/.vim/LangSpecifications/java-settings.vim"
+-'  1  0  ~/.vim/LangSpecifications/java-settings.vim
+|4,39,1,0,1604849148,"~/.vim/LangSpecifications/java-settings.vim"
+-'  2  0  ~/.vim/LangSpecifications/java-settings.vim
+|4,39,2,0,1604849103,"~/.vim/LangSpecifications/java-settings.vim"
+-'  2  0  ~/.vim/LangSpecifications/java-settings.vim
+|4,39,2,0,1604849103,"~/.vim/LangSpecifications/java-settings.vim"
+-'  1  0  ~/.vim/LangSpecifications/tt.py
+|4,39,1,0,1604849099,"~/.vim/LangSpecifications/tt.py"
+-'  1  0  ~/.vim/LangSpecifications/tt.py
+|4,39,1,0,1604849099,"~/.vim/LangSpecifications/tt.py"
+-'  1  0  ~/.vim/LangSpecifications/tt.py
+|4,39,1,0,1604849099,"~/.vim/LangSpecifications/tt.py"
+-'  1  0  ~/.vim/LangSpecifications/tt.py
+|4,39,1,0,1604849099,"~/.vim/LangSpecifications/tt.py"
+-'  2  18  ~/.vim/LangSpecifications/python-settings.vim
+|4,39,2,18,1604849055,"~/.vim/LangSpecifications/python-settings.vim"
+-'  2  18  ~/.vim/LangSpecifications/python-settings.vim
+|4,39,2,18,1604849055,"~/.vim/LangSpecifications/python-settings.vim"
+-'  2  18  ~/.vim/LangSpecifications/python-settings.vim
+|4,39,2,18,1604849055,"~/.vim/LangSpecifications/python-settings.vim"
+-'  2  18  ~/.vim/LangSpecifications/python-settings.vim
+|4,39,2,18,1604849055,"~/.vim/LangSpecifications/python-settings.vim"
+-'  2  18  ~/.vim/LangSpecifications/python-settings.vim
+|4,39,2,18,1604849055,"~/.vim/LangSpecifications/python-settings.vim"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848900,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848879,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/rr.py
+|4,39,1,0,1604848790,"~/.vim/LangSpecifications/rr.py"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848779,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848779,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848779,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848779,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848779,"~/.vim/LangSpecifications/tt.java"
+-'  1  0  ~/.vim/LangSpecifications/tt.java
+|4,39,1,0,1604848779,"~/.vim/LangSpecifications/tt.java"
 
 # History of marks within files (newest to oldest):
 
+> ~/.vim/LangSpecifications/python-settings.vim
+	*	1604849154	0
+	"	1	0
+	.	2	0
+	+	2	18
+	+	1	28
+	+	2	0
+
+> ~/.vim/LangSpecifications/java-settings.vim
+	*	1604849129	0
+	"	1	0
+	^	1	27
+	.	2	0
+	+	2	16
+	+	1	27
+	+	2	0
+
+> ~/.vim/LangSpecifications/tt.py
+	*	1604849096	0
+	"	1	0
+
+> ~/.vim/LangSpecifications/rr.py
+	*	1604848884	0
+	"	1	0
+
+> ~/.vim/LangSpecifications/tt.java
+	*	1604848877	0
+	"	1	0
+
+> ~/.vim/LangSpecifications/py-settings.vim
+	*	1604848608	0
+	"	1	15
+	^	1	16
+	.	1	15
+	+	1	15
+
+> ~/.vim/LangSpecifications/pp.py
+	*	1604848565	0
+	"	2	5
+	^	2	6
+	.	2	5
+	+	13	2
+	+	2	5
+
+> ~/tt.py
+	*	1604848520	0
+	"	2	3
+	^	2	4
+	.	2	4
+	+	2	4
+
+> ~/.vim/pp.py
+	*	1604848391	0
+	"	2	6
+	^	2	7
+	.	2	6
+	+	2	6
+
+> ~/.vim/La
+	*	1604848304	0
+	"	1	0
+
+> ~/.vim/rr.java
+	*	1604848218	0
+	"	1	22
+	^	1	23
+	.	1	22
+	+	1	22
+
 > ~/.vim/vimrc
-	*	1604838644	0
-	"	65	13
-	^	65	14
-	.	65	13
+	*	1604848202	0
+	"	77	33
+	^	75	1
+	.	77	33
 	+	1	0
-	+	46	13
-	+	46	0
+	+	47	13
 	+	47	0
-	+	64	0
+	+	48	0
 	+	65	0
 	+	66	0
-	+	66	27
 	+	67	0
-	+	65	13
-	m	39	11
+	+	67	27
+	+	68	0
+	+	66	13
+	+	2	11
+	+	68	0
+	+	69	32
+	+	78	11
+	+	70	19
+	+	69	30
+	+	71	0
+	+	72	11
+	+	73	69
+	+	76	0
+	+	74	22
+	+	77	57
+	+	74	42
+	+	77	34
+	+	74	36
+	+	75	0
+	+	78	0
+	+	77	59
+	+	74	31
+	+	77	33
+	m	40	11
+
+> ~/.vim/ee.java
+	*	1604848122	0
+	"	5	5
+	^	5	6
+	.	5	5
+	+	1	11
+	+	5	5
+
+> ~/.vim/tt.py
+	*	1604848097	0
+	"	5	2
+	^	5	3
+	.	5	2
+	+	5	2
+
+> ~/.vim/LangSpecifications/java-settings
+	*	1604847623	0
+	"	1	15
+	^	1	16
+	.	1	16
+	+	1	16
+
+> ~/Downloads/pou.java
+	*	1604847562	0
+	"	1	0
+
+> ~/Downloads/puo.java
+	*	1604847545	0
+	"	1	0
+
+> ~/Downloads/pou.py
+	*	1604847500	0
+	"	1	0
+
+> ~/.vim/.git/COMMIT_EDITMSG
+	*	1604840717	0
+	"	1	8
+	^	1	9
+	.	1	9
+	+	1	9
+
+> ~/.vim/.vimrc
+	*	1604840639	0
+	"	1	0
 
 > /usr/share/vim/vim81/doc/starting.txt
 	*	1604838234	0

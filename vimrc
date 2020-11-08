@@ -65,3 +65,14 @@ imap kj <Esc>
 
 "viminfo file location"
 set viminfo+=n~/.vim/viminfo
+
+"Different language vim configs
+"File type detection
+filetype on
+augroup Lang_Settings
+    "the command below execute the script for the specific filetype py 
+    autocmd FileType python source ~/.vim/LangSpecifications/python-settings.vim
+
+    "the command below execute the script for the specific filetype Java
+    autocmd FileType java source ~/.vim/LangSpecifications/java-settings.vim
+augroup END 
